@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+    <link rel="stylesheet"href="style.css"/>
 </head>
 <body>
+    
     <!--header section with navigation menu-->
      <header>
         <nav>
-            <ul>
-                <li><a href="#About Me">About Me</a></li></l>
-                <li><a href="#Skills">Skills</a></li></l>
-                <li><a href="#Contact">Contact</a></li></l>
-            </ul>
+             <div class="navi">
+                <a href="#About ">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Contact">Contact</a>
+                </div>
         </nav>
      </header>
-     <h1>Hello, I'm Suman Suiwal</h1>
-     <p>Aspiring Machine Learning Engineer & Web Developer | BCA (Hons.) Student | Passionate About Building Smart and Interactive Applications</p>
-
+     <h1 >Hello, I'm <span id="name">Suman Suiwal</span></h1>
+     <p id="title">Aspiring Machine Learning Engineer & Web Developer | BCA (Hons.) Student | Passionate About Building Smart and Interactive Applications</p>
+  <br><br>
        <!--About Me Section-->
-       <h2>About Me</h2>
-       <p>I am a BCA student at National Institute of Technology,kekri(Ajmer).I have a strong interest in Web Development and Machine Learning. I enjoy creating simple and user-friendly websites and continuously improving my skills in HTML, CSS, JavaScript and other technologies. I am also learning Machine Learning and Artificial Intelligence to build smart and useful applications. I am a quick learner, passionate about technology, and always ready to learn new things to grow in my career.</p>
+       <div class="aboutme">
+       <h2 id ="About">About</h2>
+       <p id="summary">I am a passionate and dedicated BCA student with a strong interest in web development and technology. I enjoy learning new skills and improving my knowledge step by step. I have basic experience in programming languages like C, C++, Python, and JavaScript, along with HTML and CSS for building websites.
 
+I am a quick learner and always ready to explore new opportunities that help me grow both personally and professionally. I believe in continuous learning and improving myself every day. I am also working on improving my communication and English speaking skills.
+
+My goal is to build a successful career in the IT field where I can use my skills, gain experience, and contribute to meaningful projects. I am always open to learning and new challenges.</p>
+      </div>
        <!--Skills Section-->
-       <h2>Skills</h2>
+       <h2 id="Skills">Skills</h2>
         <img src="HTML card.png">
         <img src="CSS card.png">
         <img src="python card.png">
@@ -33,7 +40,7 @@
         <img src="C++ card.png">
 
         <!--Contact Section-->
-        <h2>Contact Details</h2>
+        <h2 id="Contact">Contact Details</h2>
         <p>LOCATION :- Kekri,Ajmer,Rajasthan</p>
         <p>E-MAIL ID:- Sumansuiwal992@gmail.com</p>
         <p>LINKDIN :-<a href="https://www.linkedin.com/in/suman-suiwal/">www.linkedin.com/in/suman-suiwal</a></p>
