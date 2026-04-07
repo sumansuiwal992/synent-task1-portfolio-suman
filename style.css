@@ -42,7 +42,9 @@ nav{
     color: #0c0b0b;
    
 }
-#name{
+.name{
+    margin-top:100px;
+    line-height:70px;
     color: #0466c8ff;
     text-shadow:0 0 10px rgba(20, 85, 138, 0.8);
  overflow: hidden;
@@ -55,22 +57,79 @@ nav{
   from { width: 0; }
   to { width: 27%; }
 }
-#title{
+.title{
+    line-height:25px;
     font-size:18px;
     width:550px;
 }
-.aboutme{
+.avatar{
+   margin-left: 800px;
+   margin-top:-250px;
+   
+}
+h2{
+    font-size:40px;
+    text-align: center;
+    line-height:90px;
+}
+.summary{
     margin-left:250px;
     text-align:center;
     border : 2px solid black;
     border-radius:20px;
     line-height:30px;
-    padding:4px;
-    background-color: #5c677dff;
-    font-style: oblique;
+    padding:8px;
+    background-color: rgb(62, 79, 112);
+    font-style: obliqu;
+    border-style:ridge;
     width:60%;
     margin-left:300px;
     font-size:large;
 }
+
+.img{
+    display: flex;
+    gap:60px;
+    flex-wrap: wrap;
+    line-height:50px;
+    margin-right:300px;
+    margin-left:300px;
+    font-style:oblique;
+    font-family:cursive;
+}
+#info p{
+    margin-left: 200px;
+    font-weight:bold;
+}
+#social{
+    margin-left:900px;
+    margin-top: -5%;
+    font-weight:bold;
+   
+}
+#social a:visited{
+    color:rgb(230, 141, 8);
+   
+}
+#social a:hover{
+    color: rgb(6, 6, 17);
+     text-shadow:0 0 10px rgba(222, 224, 224, 0.986);
+}
+.logo{
+   justify-content: center;
+   display: flex;
+   flex-direction:row;
+   gap:20px;
+   align-items: center;
+    
+}
+.logo a:hover{
+  text-shadow:0 0 10px rgba(222, 224, 224, 0.986);
+  
+     
+}
+
+ 
+    
 
 
