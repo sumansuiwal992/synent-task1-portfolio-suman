@@ -1,15 +1,4 @@
-:root{
-    --smart-blue: #0466c8ff;
---sapphire: #0353a4ff;
---regal-navy: #023e7dff;
---prussian-blue: #002855ff;
---prussian-blue-2: #001845ff;
---prussian-blue-3: #001233ff;
---twilight-indigo: #33415cff;
---blue-slate: #5c677dff;
---slate-grey: #7d8597ff;
---lavender-grey: #979dacff;
-}
+
 body{
     background-color : #182738;
     color:#ffffff;
@@ -21,7 +10,7 @@ header{
 nav{
      font-size:15px;
     background-color:rgb(81, 92, 116);
-     word-spacing:100px;
+    word-spacing: 40px;
    text-align: center;
    padding:8px;
    border-radius:10px;
@@ -42,20 +31,21 @@ nav{
     color: #0c0b0b;
    
 }
+
 .name{
     margin-top:100px;
     line-height:70px;
     color: #0466c8ff;
     text-shadow:0 0 10px rgba(20, 85, 138, 0.8);
- overflow: hidden;
-  white-space: nowrap;
-  display:inline-flex;
-  width: 12ch;
-  animation: typing 2s steps(30) forwards infinite ;
+    overflow: hidden;
+    white-space: nowrap;
+    display:inline-flex;
+    width: 12ch;
+    animation: typing 2s steps(30) forwards infinite ;
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 27%; }
+   to { width: 12ch; } 
 }
 .title{
     line-height:24px;
@@ -63,8 +53,12 @@ nav{
     width:550px;
 }
 .avatar{
-   margin-left: 800px;
-   margin-top:-250px;
+  width: 25%;
+  position: absolute;  
+  right: 80px;         
+  top: 120px; 
+   
+  
 }
 .avatar:hover {
   background: rgba(0, 200, 255, 0.08);
@@ -86,19 +80,19 @@ h2{
     background-color: rgb(62, 79, 112);
     font-style: obliqu;
     border-style:ridge;
-    width:60%;
-    margin-left:300px;
+    width:70%;
+    margin:20px auto;
     font-size:large;
 }
 
 .img{
-  width:900px;
-    display: flex;
-    gap:60px;
-    flex-wrap: wrap;
+   width: 70%;
+  margin: 0 auto;       /* ✅ center mein rahega har screen par */
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
     line-height:50px;
-    margin-right:300px;
-    margin-left:300px;
     font-style:oblique;
     font-family:cursive;
 }
@@ -251,3 +245,83 @@ footer hr {
 }
 
 .copy strong { color: #6878b8; }
+
+@media (max-width: 768px) {
+
+  /* Home section */
+  .name {
+    font-size: 28px;
+    line-height: 50px;
+    animation: typing 2s steps(30) forwards infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 55%; }  /* mobile par zyada % dena hoga */
+  }
+
+  .title {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .avatar {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    /* important: ye 3 lines hatao - margin-left: 800px; margin-top: -250px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: static;  /* relative position hatao */
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 60px;
+  }
+
+  /* About section */
+  .summary {
+    width: 90%;
+    margin: 20px auto;
+    font-size: medium;
+  }
+
+  /* Skills section */
+  .img {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Soft Skills */
+  .soft-skills-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+
+  /* Contact section */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    padding: 0 15px;
+  }
+
+  /* Social links */
+  .social-link {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Nav spacing fix */
+  nav {
+    word-spacing: 20px;  /* 100px bahut zyada tha */
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+}
